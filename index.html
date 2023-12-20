@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>To do List</title>
+</head>
+<body>
+
+  <main>
+    <div class="box-head">
+      <h2>Todo List </h2>
+      <div class="inputs">
+        <input id="nuevaTarea" placeholder="Agrega una nueva tarea">
+        <button id="agregarTarea"><i class='bx bx-plus' ></i></i></button> 
+      </div>
+    </div>
+  
+    <div class="box-body">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th></th>
+            <th class="tareas-col">Tareas</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tareas">
+        
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="box-footer">
+      <p><i class='bx bx-list-ul'></i> Total: <span id="cuenta-tareas"></span></p>
+      <p><i class='bx bx-task' ></i> Realizadas: <span id="cuenta-tareas-hechas"></span></p>
+    </div>
+  </main>
+  
+
+  <script src="./assets/script/script.js"></script>
+</body>
+</html>
